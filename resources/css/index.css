@@ -1,0 +1,153 @@
+
+body {
+    font-family: cursive;
+    display: flex;
+    flex-wrap: wrap;
+    background: url('./images/bg-pattern-desktop.svg');
+    font-size: 16px;
+}
+
+.logo {
+    padding: 30px;
+}
+
+.main-pic {
+    width: 100%;
+    height: auto;
+}
+h1 {
+    width: 100%;
+    padding-left: auto;
+    text-align: center;
+    letter-spacing: 8px;
+}
+.sub-heading {
+    color: hsl(0, 36%, 70%);
+} 
+p {
+    width: 90%;
+    align-items: center;
+    color: hsl(0, 36%, 70%);
+    padding-left: 30px;
+    padding-right: 20px;
+}
+.bottom {
+    padding: 30px;
+    text-align: end;
+}
+input {
+    width: 95%;
+    height: 50px;
+    padding-left: 10px;
+    border-radius: 30px;
+    color: hsl(0, 36%, 70%);
+    border: 1px groove;
+    margin-bottom: 20px;
+    font-size: 20px;
+    outline: none;
+}
+input:hover {
+    border-color: hsl(0, 36%, 70%);
+}
+::placeholder {
+    color: hsl(0, 36%, 70%);
+    padding-left: 30px;
+}
+.error {
+    position: absolute;
+    display: none;
+    margin-top: -55px;
+}
+.error-icon {
+    margin-left: 250px;
+}
+.errorMsg {
+   display: none;
+   line-height: 1px;
+   text-align: start;
+}
+button:hover {
+    background-color: hsl(0, 47%, 75%);
+    border-color: hsl(0, 47%, 75%);
+    margin-left: -75px;
+}
+button {
+    background-color:hsl(0, 93%, 68%);
+    height: 55px;
+    border-radius: 30px;
+    width: 90px;
+    margin-left: -80px;
+    border: 1px groove;
+    border-color: hsl(0, 93%, 68%);
+    position: absolute;
+    outline: none;
+}
+footer {
+    order: 2;
+    width: 100%;
+    padding: 20px 0px 0px 50px;
+    font-size: 14px;
+}
+a {
+    color: hsl(0, 93%, 68%);
+}
+.main-pic2 {
+    display: none;
+}
+
+
+/*Responsiveness*/
+@media screen and (min-width: 700px) {
+   body {
+       width: 700px;
+       margin-left: auto;
+       margin-right: auto;
+       padding: 30px;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1200px;
+    }
+    #main {
+        padding: 40px;
+        width: 50%;
+        order: 1;
+    }
+    .logo {
+        margin-bottom: 30px;
+        font-size: x-small;
+        order: -1;
+        margin-left: 40px;
+        height: 10%;
+        padding-right: 35%;
+    }
+    .main-pic {
+        display: none;
+    }
+    .main-pic2 {
+        display: block;
+        width: 40%;
+       margin-top: -125px;
+        order: 2;
+    }
+    h1 {
+        width: 60%;
+        text-align: left;
+        padding-left: 30px;
+    }
+    p {
+        width: 65%;
+        padding-left: 35px;
+    }
+    .bottom {
+        width: 60%;
+    }
+    .error-icon {
+        margin-left: 250px;
+    }
+}
